@@ -1,0 +1,16 @@
+{
+  "name": "genpfdforrsb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-merge": "^1.1.0",
+    "pdfjs-dist": "^2.0.943",
+    "puppeteer": "^1.11.0"
+  }
+}
