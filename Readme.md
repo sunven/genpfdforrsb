@@ -34,6 +34,8 @@
 
 `pdftk 'd:\OpenSource\My\genpfdforrsb\React 小书(无书签).pdf' update_info_utf8 'd:\OpenSource\My\genpfdforrsb\bookmarks.txt' output 'd:\OpenSource\My\genpfdforrsb\React 小书.pdf'`
 
+- 文件路径需要用双引号
+
 ## 问题
 
 合并后的pdf页码不是连续的，还是单个pdf的页码
