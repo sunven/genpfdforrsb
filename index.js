@@ -26,7 +26,7 @@ async function genpdf(browser, url, path, isRemove) {
             height: document.documentElement.clientHeight,
             //deviceScaleFactor: window.devicePixelRatio
         };
-    },isRemove);
+    }, isRemove);
     await page.setViewport(wh);
     // path 路径， format 生成pdf页面格式
     const filepath = "dist/" + path + ".pdf"
@@ -101,10 +101,12 @@ function mergepdf(filename) {
         });
         console.log("delete success!");
     });
-
 }
 
 (async () => {
+    if (!fs.existsSync("dist")) {
+        fs.mkdirSync("dist")
+    }
     // 启动浏览器
     const browser = await puppeteer.launch({
         // 无界面 默认为true,改成false,则可以看到浏览器操作，目前生成pdf只支持无界面的操作。
